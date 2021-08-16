@@ -6,7 +6,8 @@ const PageLoading = () => {
     return (
         <div className={'PageLoading-div'}>
             <div className={'PageLoading-wrapper'}>
-                <img src={atlas}/>
+                <img src={atlas} className={'PageLoading-logo'}/>
+                <div className={'PageLoading-logo-background'}></div>
             </div>
         </div>
     )
