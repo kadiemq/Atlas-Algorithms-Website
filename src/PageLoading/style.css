@@ -6,14 +6,18 @@
 }
 
 .PageLoading-wrapper {
-    /* max-width: 600px; */
-    /* width: 80%; */
+    display: flex;
 }
 
 
 .PageLoading-logo {
     width: 100%;
-    /* box-shadow: 0 0 10px rgb(0 0 0 / 30%); */
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    image-rendering: -moz-crisp-edges;         
+    image-rendering:   -o-crisp-edges;         
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor; 
 }
 
 .PageLoading-logo-background {
@@ -22,10 +26,20 @@
     left: 50%;
     width: 110%;
     height: 110%;
-    background-color: red;
-    z-index: -1;
+    z-index: -2;
     transform: translate(-50%, -50%);
     animation: change 2s ease-in-out infinite;
+}
+
+.PageLoading-logo-background-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 105%;
+    height: 105%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    animation: change 1s ease-in-out infinite;
 }
 
 
@@ -44,6 +58,24 @@
     }
     100% {
         background-color: yellow
+    }
+}
+
+@keyframes change2 {
+    0% {
+        background-color: black
+    }
+    25% {
+        background-color: yellow
+    }
+    50% {
+        background-color: black
+    }
+    75% {
+        background-color: yellow
+    }
+    100% {
+        background-color: black
     }
 }
 

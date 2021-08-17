@@ -1,16 +1,16 @@
 import './style.css'
 import PageLoading from "./PageLoading/PageLoading";
-import {useState} from 'react'
+import HomePage from "./PageHome/PageHome";
+import {useSelector} from 'react-redux'
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true)
+
+  const loading = useSelector((state) => state.loading)
   
-  if (isLoading) {
+  if (loading) {
     return <PageLoading/>
   } else {
-    return (
-      <h1>Not Loading</h1>
-    )
+    return <HomePage/>
   }
    
 }
