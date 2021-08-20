@@ -1,6 +1,6 @@
 import './style.css'
 import PageLoading from "./PageLoading/PageLoading";
-import HomePage from "./PageHome/PageHome";
+import HomePagePageHomeIndex from "./PageHome/index";
 import {useSelector} from 'react-redux'
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
   if (loading) {
     return <PageLoading/>
   } else {
-    return <HomePage/>
+    return <HomePagePageHomeIndex/>
   }
    
 }
