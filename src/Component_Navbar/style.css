@@ -1,0 +1,33 @@
+.navbar_wrapper {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4em;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--yellow2);
+    border-radius: 1em;
+    /* box-shadow: 0 0px 5px rgb(0, 0, 0, 0.23); */
+    opacity: 0;
+}
+
+.icons {
+    text-align: center;
+    padding: 0.5em;
+    font-size: 1.5em;
+    color: var(--dark_gray);
+    display: flex;
+}
+
+.show_navbar{
+    opacity: 100%;
+    margin-top: 1em;
+    transition: all 3s;
+}
+
+@media screen and (max-width: 650px) {
+    .navbar_wrapper {
+        width: 80%;
+    }
+}
