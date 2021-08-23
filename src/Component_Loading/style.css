@@ -72,12 +72,12 @@
 }
 
 @keyframes fadeout{
-    0% { opacity:100%; }
-    100% { opacity:0%; }
+    0% { opacity:1; }
+    100% { opacity:0; }
 }
 
 @keyframes loading_text{
     0% { opacity:0; }
-    50% { opacity:100%; }
+    50% { opacity:1; }
     100% { opacity:0; }
 }

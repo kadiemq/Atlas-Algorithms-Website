@@ -21,7 +21,7 @@
 }
 
 .show_navbar{
-    opacity: 100%;
+    opacity: 1;
     margin-top: 1em;
     transition: all 3s;
 }

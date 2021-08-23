@@ -46,7 +46,7 @@ body {
 
 
 #opacity_100 {
-    opacity: 100%;
+    opacity: 1;
     transition: opacity 3s;
 }
 
